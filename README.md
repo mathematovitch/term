@@ -140,6 +140,11 @@ site principal, sans toucher à ce dépôt.
 
 - [ ] **1. Tutoriel intégré** (`tuto`), plus tard : quelques défis du type
   « trouve le DS sur les angles » pour apprendre les bases du terminal.
+- [ ] **2. Lien vers un dossier** : une adresse du type
+  `/term/#cd=/Sixieme/S04-Angles` ouvre le terminal dans ce dossier (pratique
+  pour un QR code projeté).
+- [ ] **3. Mode contrôle** : `clock` avec compte à rebours (35 min par défaut)
+  et alerte visuelle 5 min avant la fin.
 
 <details>
 <summary>Déjà fait</summary>
