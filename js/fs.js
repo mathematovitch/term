@@ -1,4 +1,5 @@
-// Système de fichiers virtuel, en lecture seule, construit depuis fs.json (généré par build.py).
+// Système de fichiers virtuel, en lecture seule, construit depuis /assets/fs.json du site principal
+// (généré par build_term_fs() de tools/build.py, dans assets/fs.json).
 // Un dossier est un objet { nom: enfant }, un fichier est sa taille en octets.
 import { SITE } from "./config.js";
 import { state, isRoot } from "./state.js";
@@ -8,7 +9,7 @@ export let META = { hidden: [], prof: [], enc: [], tree: {} };
 let ENC = new Set();
 
 export async function loadFS() {
-  const r = await fetch("fs.json", { cache: "no-cache" });
+  const r = await fetch(`${SITE}/assets/fs.json`, { cache: "no-cache" });
   if (!r.ok) throw new Error(`fs.json : erreur HTTP ${r.status}`);
   META = await r.json();
   ENC = new Set(META.enc || []);

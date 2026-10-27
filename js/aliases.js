@@ -1,4 +1,4 @@
-// Alias et fonctions de term/aliases.sh (comme un ~/.bash_aliases), développés à l'exécution.
+// Alias et fonctions du fichier aliases.sh (comme un ~/.bash_aliases), développés à l'exécution.
 export const USER_ALIASES = {};   // nom → ligne de commande
 export const FUNCS = {};          // nom → corps (« "$@" » remplacé par les arguments)
 

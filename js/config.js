@@ -1,4 +1,4 @@
-// Réglages du terminal. Le mot de passe de sudo est celui du mode prof (assets/prof.js,
+// Réglages du terminal. Le mot de passe de sudo est celui du mode prof du site principal (/assets/prof.js,
 // tools/profkey.py) : rien de secret ici.
 export const HOST = "mathematovitch";
 export const USER = "eleve";

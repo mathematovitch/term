@@ -57,7 +57,7 @@ export const clear = {
 };
 
 export const source = {
-  help: "relit les alias (term/aliases.sh) et réaffiche l'accueil, sans changer de dossier",
+  help: "relit les alias (aliases.sh) et réaffiche l'accueil, sans changer de dossier",
   usage: "source ~/.bashrc   (alias : s)",
   async run(args, io) {
     await loadAliases();
@@ -77,7 +77,7 @@ export const builtin = {
 };
 
 export const alias = {
-  help: "liste les alias et fonctions (définis dans term/aliases.sh)",
+  help: "liste les alias et fonctions (définis dans aliases.sh)",
   usage: "alias",
   run(args, io) {
     for (const [k, v] of Object.entries(USER_ALIASES)) io.out(`alias ${k}='${v}'`);
